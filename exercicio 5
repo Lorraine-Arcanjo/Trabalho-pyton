@@ -1,10 +1,11 @@
-# Write Python 3 code in this online editor and run it.
-Calculo de imc
+# Cálculo de IMC
 
-nome=input("Digite seu nome:")
-peso=float(input("Digite seu peso (kg):"))
-altura=float(input("Digite sua altura(m):"))
-imc=peso/(altura*altura)
+nome = input("Digite seu nome: ")
+peso = float(input("Digite seu peso (kg): "))
+altura = float(input("Digite sua altura (m): "))
+
+imc = peso / (altura * altura)
+
 if imc < 18.5:
     classificacao = "Abaixo do peso"
 elif imc < 25:
@@ -18,5 +19,6 @@ elif imc < 40:
 else:
     classificacao = "Obesidade grau 3 (mórbida)"
 
-print(f"nome,seu imc e:{imc:.2f}")
+print(f"{nome}, seu IMC é: {imc:.2f}")
+print(f"Classificação: {classificacao}")
 
