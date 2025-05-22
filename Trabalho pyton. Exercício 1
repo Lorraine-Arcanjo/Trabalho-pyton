@@ -1,17 +1,14 @@
-Autonomia de um carro
+# Autonomia de um carro
 
-km_percorridos=
-float(input("informe a quantidade de km percorridos:"))
-litros_consumidos=
-float(input("informe a quantidade de litros consumidos:"))
-if litros_consumidos==0:
-    print("rro:quantidade de litros não pode ser zero.")
+km_percorridos = float(input("Informe a quantidade de km percorridos: "))
+litros_consumidos = float(input("Informe a quantidade de litros consumidos: "))
+
+if litros_consumidos == 0:
+    print("Erro: a quantidade de litros não pode ser zero.")
 else:
-    consumo_medio=km_percorridos/litros_consumidos
-    print(f"Consumo médio:
-        {consumo_médio:.2f}km/1")
-        capacidade_tanque=
-    float (input("informe a capacidade do tanque(m litros:"))
-        autonomia=consumo_medio*capacidade_tanque
-        prinrt(f"Autonomia estimada com o tanque cheio:{autonomia:.2f}km")
-
+    consumo_medio = km_percorridos / litros_consumidos
+    print(f"Consumo médio: {consumo_medio:.2f} km/l")
+    
+    capacidade_tanque = float(input("Informe a capacidade do tanque (em litros): "))
+    autonomia = consumo_medio * capacidade_tanque
+    print(f"Autonomia estimada com o tanque cheio: {autonomia:.2f} km")
