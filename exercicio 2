@@ -1,4 +1,4 @@
-Parcelamento de compra 
+#Parcelamento de compra 
 
 nome = input("Digite o nome do cliente: ")
 valor_total = float(input("Digite o valor total da compra: R"))
