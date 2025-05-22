@@ -1,25 +1,33 @@
-    exibir_menu():
-    print("\n--- MENU DA PADARIA ---")
-    print("[1] Pão francês - R1,00")
-    print("[2] Pão de queijo - R 2,50")
-    print("[3] Sonho - R4,00")
-    print("[4] Café - R 2,00")
-    print("[5] Suco - R3,00")
-    print("[6] Finalizar compra")
+print("------------- PADARIA -------------")
+print("[1] Pão Francês - R$ 1,04")
+print("[2] Pão Integral - R$ 1,04")
+print("[3] Pão Doce Liso - R$ 1,08")
+print("[4] Pão Doce Farofa - R$ 1,11")
+print("[5] Pão de Forma - R$ 0,95")
+print("[6] Fim da compra")
+print("-----------------------------------")
 
-precos = 1: 1.00, 2: 2.50, 3: 4.00, 4: 2.00, 5: 3.00
+precos = {
+    1: 1.04,
+    2: 1.04,
+    3: 1.08,
+    4: 1.11,
+    5: 0.95
+}
+
 total = 0
 
 while True:
-    exibir_menu()
-    opcao = int(input("Escolha uma opção: "))
-    
-    if opcao == 6:
-        break
-    elif opcao in precos:
-        qtd = int(input("Quantos deseja? "))
-        total += precos[opcao] * qtd
-    else:
-        print("Opção inválida.")
+    try:
+        opcao = int(input("Escolha sua opção: "))
+        if opcao == 6:
+            break
+        elif opcao in precos:
+            qtd = int(input("Digite a quantidade: "))
+            total += precos[opcao] * qtd
+        else:
+            print("Opção inválida. Tente novamente.")
+    except ValueError:
+        print("Entrada inválida. Digite apenas números.")
 
-print(f" a pagar: R {total:.2f}")
+print(f"Total a pagar: R$ {total:.2f}")
