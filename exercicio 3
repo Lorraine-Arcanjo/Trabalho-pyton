@@ -1,0 +1,16 @@
+Calculadora de bonus por venda
+
+salario_fixo=float(input("informe o salario fixo do vendedor:"))
+quantidade_vendas=
+int(input("informe a quantidade de vendas realizadas:"))
+valor_total_vendas=
+float(input("informe o valor total das vendas:"))
+if quantidade_vendas>=20:
+    bonus=valor_total_vendas*0.15
+    print(f"\nMeta alcansada! Comissao de 15%: bonus:.2f")
+else:
+    bonus=0
+    print("Meta nao alcançada. sem comissao.")
+salario_final=salario_fixo+bonus
+print(f"salari final do vendedor:{
+salario_final:.2f}")
