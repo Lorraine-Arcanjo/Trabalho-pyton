@@ -1,0 +1,9 @@
+# Write Python 3 code in this online editor and run it.
+Calculo de imc
+
+nome=input("Digite seu nome:")
+peso=float(input("Digite seu peso (kg):"))
+altura=float(input("Digite sua altura(m):"))
+imc=peso/(altura*altura)
+print(f"nome,seu imc e:{imc:.2f}")
+
