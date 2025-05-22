@@ -1,7 +1,13 @@
 Parcelamento de compra 
 
-valor_total=float(input("informe o valor total da compra:"))
-prestação=valor_total/5
+nome = input("Digite o nome do cliente: ")
+valor_total = float(input("Digite o valor total da compra: R"))
 
-print(f"parcelada em 5x sem juros:")
-print(f"parcela")
+parcelas = 5
+valor_parcela = valor_total / parcelas
+
+print("—— RECIBO DE COMPRA ——")
+print(f"Cliente: nome")
+print(f"Valor total: R {valor_total:.2f}")
+print(f"Parcelado em {parcelas}x de R$ {valor_parcela:.2f} (sem juros)")
+print("-------------------------------")
