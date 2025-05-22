@@ -1,4 +1,4 @@
-Calculadora de bonus por venda
+#Calculadora de bonus por venda
 
 salario_fixo=float(input("informe o salario fixo do vendedor:"))
 quantidade_vendas=
