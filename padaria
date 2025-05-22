@@ -1,33 +1,27 @@
-print("------------- PADARIA -------------")
-print("[1] Pão Francês - R$ 1,04")
-print("[2] Pão Integral - R$ 1,04")
-print("[3] Pão Doce Liso - R$ 1,08")
-print("[4] Pão Doce Farofa - R$ 1,11")
-print("[5] Pão de Forma - R$ 0,95")
-print("[6] Fim da compra")
-print("-----------------------------------")
+menu():
+    print("------------- PADARIA -------------")
+    print("[1] Pão Francês - R1,04")
+    print("[2] Pão Integral - R 1,04")
+    print("[3] Pão Doce Liso - R1,08")
+    print("[4] Pão Doce Farofa - R 1,11")
+    print("[5] Pão de Forma - R0,95")
+    print("[6] Fim da compra")
+    print("———————————–")
 
-precos = {
-    1: 1.04,
-    2: 1.04,
-    3: 1.08,
-    4: 1.11,
-    5: 0.95
-}
-
+Preços
+precos = 1: 1.04, 2: 1.04, 3: 1.08, 4: 1.11, 5: 0.95
 total = 0
 
 while True:
-    try:
-        opcao = int(input("Escolha sua opção: "))
-        if opcao == 6:
-            break
-        elif opcao in precos:
-            qtd = int(input("Digite a quantidade: "))
-            total += precos[opcao] * qtd
-        else:
-            print("Opção inválida. Tente novamente.")
-    except ValueError:
-        print("Entrada inválida. Digite apenas números.")
+    menu()
+    opcao = int(input("Escolha sua opção: "))
 
-print(f"Total a pagar: R$ {total:.2f}")
+    if opcao == 6:
+        break
+    elif opcao in precos:
+        qtd = int(input("Digite a quantidade: "))
+        total += precos[opcao] * qtd
+    else:
+        print("Opção inválida. Tente novamente.")
+
+print(f" a pagar: R {total:.2f}")
