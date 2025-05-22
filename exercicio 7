@@ -1,4 +1,4 @@
-Locadora de carro
+# Locadora de carro
 
 dias = int(input("Digite a quantidade de dias alugados: "))
 kms = float(input("Digite a quantidade de km percorridos: "))
@@ -6,12 +6,9 @@ kms = float(input("Digite a quantidade de km percorridos: "))
 preco_por_dia = 90
 preco_por_km = 0.20
 
-Fórmula: total = (dias * 90) + (kms * 0.20)
 total = (dias * preco_por_dia) + (kms * preco_por_km)
 
 print("\n------ RECIBO ------")
 print(f"Dias alugados: {dias}")
 print(f"Km percorridos: {kms:.2f}")
 print(f"Valor total a pagar: R$ {total:.2f}")
-
-total = (dias × 90) + (km × 0,20)  
